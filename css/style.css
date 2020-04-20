@@ -9,6 +9,117 @@
 /* GENERAL RULES */
 body {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  font-size: 12px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.cta-btn {
+  background: rgba(254, 119, 89, 1);
+  color: white;
+}
+.cta-btn a{
+  color: white;
+}
+.cta-btn:hover{
+  cursor: pointer;
+  background: rgba(254, 119, 89, 0.7);
 }
 
 /* END GENERAL RULES */
+
+/* HEADER */
+/** Login NavBar **/
+nav {
+  height: 140px;
+}
+nav .login  {
+  background: #f4f9fd;
+  border-bottom: 1px solid #6f808d;
+  height: 70px;
+}
+nav .login .login-list {
+  padding: 20px 0;
+}
+nav .login .login-list .col {
+  float: left;
+  line-height: 25px;
+}
+/* Navbar Left Col */
+nav .login .login-list .language {
+  width: 70%;
+}
+nav .login .login-list .language li{
+  display: inline-block;
+  padding: 0 5px;
+  color: #536776;
+}
+nav .login .login-list .language li i{
+  padding: 0 10px;
+}
+/* Navbar Right Col */
+nav .login .login-list .buttons {
+  text-align: right;
+  width: 30%;
+}
+nav .login .login-list .buttons span{
+  margin: 0 7px;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+nav .login .login-list .buttons i{
+  color: #23ADC4;
+}
+nav .login .login-list .buttons .login-btn{
+  border: 1px solid #fe7759;
+}
+nav .login .login-list .buttons .login-btn a{
+  color: #fe7759;
+}
+nav .login .login-list .buttons .cta-btn{
+  border: 1px solid #fe7759;
+}
+/** End Login NavBar **/
+
+/* Menu NavBar */
+nav .navbar .menu {
+  padding: 20px 0;
+  height: 70px;
+}
+nav .navbar .menu .col {
+  float: left;
+  line-height: 25px;
+}
+nav .navbar .menu .logo {
+  width: 60%;
+  padding: 0px 10px;
+}
+nav .navbar .menu ul li{
+  display: inline-block;
+  padding: 0 5px;
+}
+nav .navbar .menu ul li *{
+  color: #536776;
+  padding: 0 2px;
+}
+nav .navbar .menu .list {
+  text-align: right;
+  width: 40%;
+}
+/* End Menu NavBar */
+
+/* END HEADER */
