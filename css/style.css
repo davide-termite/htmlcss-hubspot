@@ -12,6 +12,7 @@ body {
   font-weight: 400;
   letter-spacing: -0.5px;
   font-size: 12px;
+  color: #33475a;
 }
 li {
   list-style: none;
@@ -21,11 +22,15 @@ a {
 }
 h1 {
   font-size: 40px;
-  color: #33475a;
 }
 h6 {
   font-size: 10px;
   font-weight: 400;
+}
+.card {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px 5px lightgray;
 }
 .container {
   width: 70%;
@@ -48,7 +53,11 @@ h6 {
 }
 .cta-btn:hover{
   cursor: pointer;
-  background: rgba(254, 119, 89, 0.7);
+  background: rgba(254, 119, 89, 0.8);
+  transition: 0.3s;
+}
+.fa-check-circle{
+ color: rgba(254, 119, 89, 1);
 }
 
 /* END GENERAL RULES */
@@ -175,17 +184,15 @@ header .hero .container .hero-text .cta-btn{
 /** Features Section **/
 main .features {
   background: #F4F9FD;
-  /* height: 150vh; */
+}
+main .features .row{
+  margin-bottom: 50px;
 }
 
 /* First Row */
 .first-row {
-  height: 100vh;
+  padding-top: 30px;
 }
-/* .firts-row .cube img{
-  width: 200px;
-  margin: 30px 40%;
-} */
 .first-row .text {
   text-align: center;
 }
@@ -198,8 +205,111 @@ main .features {
   font-size: 15px;
   color: #32495a;
   line-height: 25px;
+}
 /* End First Row */
 
+/* Second Row */
+.second-row .card .col{
+  float: left;
+  margin-left: 5%;
+}
+.second-row .card .col .content-left,
+.second-row .card .col .content-right {
+  margin: 50px;
+}
+.second-row .card .left {
+  width: 20%;
+}
+.second-row .card .left img{
+  height: 100px;
+}
+.second-row .card .left .cta-btn{
+  margin: 20px 0;
+  padding: 20px 5px;
+}
+.second-row .card .right{
+  width: 60%;
+}
+.second-row .card .col .content-right h2{
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.second-row .card .col .content-right p{
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.second-row .card .col .content-right hr{
+  width: 60%;
+  margin: -10px 0px 0 180px;
+}
+.second-row .card .col .content-right ul li{
+  display: inline-block;
+  margin-top: 30px;
+}
+.second-row .card .col .content-right ul li i{
+  padding-left: 5px;
+}
+.second-row .card .col .content-right ul li *{
+  padding-right: 10px;
+
+}
+/* End Second Row */
+
+/* Third Row */
+.third-row .col{
+  float: left;
+  width: 30%;
+}
+.third-row .col .content{
+  width: 85%;
+  margin: 0 auto;
+}
+.third-row .center{
+  margin: 0 5%;
+}
+
+/* Card Design */
+.third-row .col .content div{
+  margin-top: 20px;
+}
+.third-row .col .img{
+  width: 100px;
+  margin: 0 auto;
+}
+.third-row .col .img img{
+  height: 100px;
+}
+.third-row .col .text{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.third-row .col .text h2{
+  font-size: 20px;
+}
+.third-row .col .text p{
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.third-row .col hr{
+  width: 50%;
+  margin: 0 auto;
+}
+.third-row .col .features-list h3{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.third-row .col .features-list ul li *{
+  padding: 2px 10px;
+}
+.third-row .col .features-list .cta-btn {
+  width: 50%;
+  margin: 30px auto 20px auto;
+  padding: 20px 5px;
+}
+/* End Card Design */
+
+/* End Third Row */
 /** End Features Section **/
 
 /** Numbers Section **/
