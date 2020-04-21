@@ -59,7 +59,9 @@ h6 {
 .fa-check-circle{
  color: rgba(254, 119, 89, 1);
 }
-
+.white {
+  color: white;
+}
 /* END GENERAL RULES */
 
 /* HEADER */
@@ -313,11 +315,66 @@ main .features .row{
 /** End Features Section **/
 
 /** Numbers Section **/
-
-/* main .numbers {
+main .numbers {
   background-image: linear-gradient(to right top, #00a4bc, #00abba, #00b1b5, #00b7ae, #00bda5);
-  height: 600px;
-} */
+  padding-bottom: 60px;
+}
+
+/* Section Text*/
+main .numbers .container .text {
+  padding: 20px 0;
+  text-align: center;
+}
+main .numbers .container .text h2{
+  font-size: 30px;
+  text-align: center;
+  padding: 30px;
+}
+main .numbers .container .text p{
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+}
+/* End Section Text*/
+
+/* Grid */
+.grid-container .row .box{
+  float: left;
+  width: 25%;
+  margin-top: 5%;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+.grid-container .row .box:last-child {
+  border-right: none;
+}
+.grid-container .row .box .box-content{
+  width: 100%;
+  margin: 0 auto;
+}
+.grid-container .row .box .box-content .icon{
+  height: 60px;
+  margin: 20px auto;
+}
+.grid-container .row .box .box-content .icon img{
+  height: 40px;
+  width: 100%;
+  margin: 0 auto;
+}
+.grid-container .row .box .box-content .number p{
+  font-size: 50px;
+  text-align: center;
+  font-weight: 600;
+}
+.grid-container .row .box .box-content .description p{
+  margin: 20px 0;
+  text-align: center;
+}
+.grid-container .second .box {
+  margin-top: 0;
+  border-bottom: none;;
+}
+/* End Grid */
 
 /** End Numbers Section **/
 
