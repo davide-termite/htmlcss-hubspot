@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 /* END RESET */
-
 /* GENERAL RULES */
 body {
   font-family: 'Montserrat', sans-serif;
@@ -375,7 +374,6 @@ main .numbers .container .text p{
   border-bottom: none;;
 }
 /* End Grid */
-
 /** End Numbers Section **/
 
 /** Partners Section **/
@@ -415,8 +413,7 @@ main .partners .logos .row ul li .img{
 main .partners .logos .row ul li .img img{
   width: 100px;
 }
-/* End Partner Logos*/
-
+/* End Partner Logos*/ 
 /* Partners Avatar*/
 main .partners .avatar .col{
   float: left;
@@ -450,12 +447,79 @@ main .partners .avatar .avatar img{
   float: right;
 }
 /* End Partners Avatar */
-/** End Partners Section **/ 
+/** End Partners Section **/
 /* END MAIN */
 
 /* FOOTER */
 footer {
   background: #32495a;
-  height: 500px;
 }
+/* Sitemap */
+.top .list {
+  margin: 3% 0;
+  float: left;
+  width: 25%;
+}
+.top .list ul li{
+  margin: 20px 0;
+  font-size: 15px;
+}
+.top .list ul li a{
+  color: rgba(255,255,255,0.6);
+}
+.top .list ul .title {
+  font-size: 18px;
+  padding: 10px 0;
+}
+.top .list ul .button {
+  background: rgba(255,255,255,0.8);
+  padding: 10px 0px 10px 15px;
+  border: 1px solid rgba(255,255,255,0.8);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.top .list ul .button a{
+  color: #32495a;
+}
+/* Social Icon */
+.top .list ul .social li{
+  display: inline-block;
+  padding-right: 20px;
+}
+/* End Social Icon */
+/* Language */
+.lang {
+  width: 100%;
+  margin: 0 auto;
+}
+.lang li{
+  display: inline-block;
+  padding: 5% 3% 5% 8%;
+}
+.lang li a{
+  color: white;
+}
+/* End Language */
+/* End Sitemap */
+
+/* Legal */
+.legal .col{
+  float: left;
+  width: 50%;
+  padding: 50px 0;
+}
+.legal .col img{
+  color: white;
+}
+.legal .col .content li{
+  display: inline-block;
+  text-align: right;
+  margin-left: 30%;
+}
+.legal .col .content li a{
+  color: white;
+  font-size: 15px;
+  padding-right: 10px;
+}
+/* End Legal */
 /* END FOOTER */
