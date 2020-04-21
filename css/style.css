@@ -53,7 +53,7 @@ h6 {
 }
 .cta-btn:hover{
   cursor: pointer;
-  background: rgba(254, 119, 89, 0.8);
+  background: #00a4bc;
   transition: 0.3s;
 }
 .fa-check-circle{
@@ -379,19 +379,83 @@ main .numbers .container .text p{
 /** End Numbers Section **/
 
 /** Partners Section **/
+/* Partner Logos*/
+main .partners .partner-list {
+  width: 85%;
+  margin: 30px auto;
+}
+main .partners .col {
+  float: left;
+}
+main .partners .text{
+  width: 20%;
+}
+main .partners .text span{
+  font-size: 50px;
+  font-weight: 600;
+}
+main .partners .text p{
+  font-size: 15px;
+  margin-top: 10px;
+}
+main .partners .logos{
+  width: 60%;
+  margin-left: 20%;
+}
+main .partners .logos .row{
+  margin: 40px 0;
+}
+main .partners .logos .row ul li{
+  float:left;
+  width: 25%;
+}
+main .partners .logos .row ul li .img{
+  height: 30px;
+}
+main .partners .logos .row ul li .img img{
+  width: 100px;
+}
+/* End Partner Logos*/
 
-/* main .partners {
-  background: #F4F9FD;
-  height: 150vh;
-} */
-
-/** End Partners Section **/
-
+/* Partners Avatar*/
+main .partners .avatar .col{
+  float: left;
+  width: 50%;
+  margin: 50px 0;
+}
+main .partners .avatar .text {
+  width: 40%;
+}
+main .partners .avatar .text h2{
+  margin: 30px 0;
+  font-size: 30px;
+}
+main .partners .avatar .text p{
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+main .partners .avatar .text .cta-btn{
+  width: 50%;
+  padding: 20px 5px;
+}
+main .partners .avatar .text h6{
+  margin-top: 30px;
+}
+main .partners .avatar .avatar {
+  width: 50%;
+  margin-left: 10%;
+}
+main .partners .avatar .avatar img{
+  width: 300px;
+  float: right;
+}
+/* End Partners Avatar */
+/** End Partners Section **/ 
 /* END MAIN */
 
 /* FOOTER */
-/* footer {
+footer {
   background: #32495a;
   height: 500px;
-} */
+}
 /* END FOOTER */
