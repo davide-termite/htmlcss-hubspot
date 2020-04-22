@@ -5,10 +5,10 @@
   box-sizing: border-box;
 }
 /* END RESET */
+
 /* GENERAL RULES */
 body {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
   letter-spacing: -0.5px;
   font-size: 12px;
   color: #33475a;
@@ -18,18 +18,13 @@ li {
 }
 a {
   text-decoration: none;
+  color: white;
 }
 h1 {
   font-size: 40px;
 }
 h6 {
   font-size: 10px;
-  font-weight: 400;
-}
-.card {
-  background: white;
-  border-radius: 5px;
-  box-shadow: 0px 0px 8px 5px lightgray;
 }
 .container {
   width: 70%;
@@ -40,6 +35,14 @@ h6 {
   display: table;
   clear: both;
 }
+.col {
+  float: left;
+}
+.card {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px 5px lightgray;
+}
 .cta-btn {
   background: rgba(254, 119, 89, 1);
   color: white;
@@ -47,28 +50,22 @@ h6 {
   padding: 25px;
   border-radius: 5px;
 }
-.cta-btn a{
-  color: white;
-}
 .cta-btn:hover{
   cursor: pointer;
   background: #00a4bc;
   transition: 0.3s;
 }
-.fa-check-circle{
- color: rgba(254, 119, 89, 1);
-}
 .white {
   color: white;
+}
+.fa-check-circle{
+ color: rgba(254, 119, 89, 1);
 }
 /* END GENERAL RULES */
 
 /* HEADER */
 
 /** Login NavBar **/
-nav {
-  height: 140px;
-}
 nav .login  {
   background: #f4f9fd;
   border-bottom: 1px solid #6f808d;
@@ -78,7 +75,6 @@ nav .login .login-list {
   padding: 20px 0;
 }
 nav .login .login-list .col {
-  float: left;
   line-height: 25px;
 }
 /* Navbar Left Col */
@@ -123,7 +119,6 @@ nav .navbar .menu {
   height: 70px;
 }
 nav .navbar .menu .col {
-  float: left;
   line-height: 25px;
 }
 nav .navbar .menu .logo {
@@ -156,10 +151,6 @@ header .hero .container .hero-text{
   float: left;
   width: 50%;
   height: 400px;
-  /* margin: 200px 0; */
-}
-header .hero .container .hero-text h1{
-  font-size: 40px;
 }
 header .hero .container .hero-text p{
   font-size: 15px;
@@ -176,12 +167,10 @@ header .hero .container .hero-text .cta-btn{
   width: 160px;
 }
 /** End Hero **/
-
 /* END HEADER */
 
 
 /* MAIN */
-
 /** Features Section **/
 main .features {
   background: #F4F9FD;
@@ -189,7 +178,6 @@ main .features {
 main .features .row{
   margin-bottom: 50px;
 }
-
 /* First Row */
 .first-row {
   padding-top: 30px;
@@ -211,7 +199,6 @@ main .features .row{
 
 /* Second Row */
 .second-row .card .col{
-  float: left;
   margin-left: 5%;
 }
 .second-row .card .col .content-left,
@@ -258,7 +245,6 @@ main .features .row{
 
 /* Third Row */
 .third-row .col{
-  float: left;
   width: 30%;
 }
 .third-row .col .content{
@@ -382,9 +368,6 @@ main .partners .partner-list {
   width: 85%;
   margin: 30px auto;
 }
-main .partners .col {
-  float: left;
-}
 main .partners .text{
   width: 20%;
 }
@@ -408,15 +391,15 @@ main .partners .logos .row ul li{
   width: 25%;
 }
 main .partners .logos .row ul li .img{
-  height: 30px;
+  height: 25px;
 }
 main .partners .logos .row ul li .img img{
-  width: 100px;
+  width: 60%;
+  vertical-align: middle;
 }
-/* End Partner Logos*/ 
+/* End Partner Logos*/
 /* Partners Avatar*/
 main .partners .avatar .col{
-  float: left;
   width: 50%;
   margin: 50px 0;
 }
@@ -456,7 +439,7 @@ footer {
 }
 /* Sitemap */
 .top .list {
-  margin: 3% 0;
+  margin-top: 3%;
   float: left;
   width: 25%;
 }
@@ -478,6 +461,10 @@ footer {
   border-radius: 5px;
   cursor: pointer;
 }
+.top .list ul .button:hover{
+  background-color: white;
+  transition: 0.3s;
+}
 .top .list ul .button a{
   color: #32495a;
 }
@@ -496,27 +483,23 @@ footer {
   display: inline-block;
   padding: 5% 3% 5% 8%;
 }
-.lang li a{
-  color: white;
-}
 /* End Language */
 /* End Sitemap */
 
 /* Legal */
 .legal .col{
-  float: left;
   width: 50%;
   padding: 50px 0;
 }
 .legal .col img{
   color: white;
 }
-.legal .col .content li{
+.legal .right .content li{
   display: inline-block;
   text-align: right;
   margin-left: 30%;
 }
-.legal .col .content li a{
+.legal .right .content li a{
   color: white;
   font-size: 15px;
   padding-right: 10px;
